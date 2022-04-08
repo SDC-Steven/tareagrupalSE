@@ -7,15 +7,56 @@
 <ion-content>
   <h1 class="ion-padding">Anion GAP Elevado</h1>
   <ion-list>
-    <ion-item>
-      ¿Hipoxia Tisular? --> Acidosis L-Lactica
+    <ion-item (click)="onCheckHipo()">
+      <ion-label> ¿Hipoxia Tisular?</ion-label>
+      <ion-checkbox slot="start" color="Primary"></ion-checkbox>
     </ion-item>
-    <ion-item>
-      ¿Cuerpos Cetonicos? --> Cetoacidosis
+    <ion-card #cardHipo style="display:none">
+      <ion-card-header>
+        <ion-card-title>Acidosis L-Lactica</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Se refiere al ácido láctico que se acumula en el torrente sanguíneo. El ácido láctico se produce cuando
+        los niveles de oxígeno disminuyen en las células dentro de las áreas del cuerpo en las
+        que se lleva a cabo el metabolismo.
+        Fuente: https://medlineplus.gov/spanish/ency/article/000391.htm
+      </ion-card-content>
+    </ion-card>
+
+
+    <ion-item (click)="onCheckCeto()">
+      <ion-label> ¿Cuerpos Cetonicos?</ion-label>
+      <ion-checkbox slot="start" color="Secondary"></ion-checkbox>
     </ion-item>
-    <ion-item>
-      ¿Función Renal? --> Insuficiencia Renal
+    <ion-card #cardCeto style="display:none">
+      <ion-card-header>
+        <ion-card-title>Cetoacidosis</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        La cetoacidosis diabética (CAD) es una afección que pone en riesgo la vida y que afecta a
+        personas con diabetes. Ocurre cuando el cuerpo empieza a descomponer la grasa demasiado rápido.
+        El hígado convierte la grasa en un impulsor llamado cetona que hace que la sangre se vuelva ácida.
+        Fuente: https://medlineplus.gov/spanish/ency/article/000320.htm
+      </ion-card-content>
+    </ion-card>
+
+
+    <ion-item (click)="onCheckRenal()">
+      <ion-label> ¿Función Renal?</ion-label>
+      <ion-checkbox slot="start" color="Warning"></ion-checkbox>
     </ion-item>
+    <ion-card #cardRenal style="display:none">
+      <ion-card-header>
+        <ion-card-title>Insuficiencia Renal</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        si los riñones están lesionados, no funcionan correctamente. Pueden acumularse desechos
+        peligrosos en el organismo. Puede elevarse la presión arterial. Su cuerpo puede retener el exceso
+        de líquidos y no producir suficientes glóbulos rojos. A esto se le llama insuficiencia renal.
+        Fuente: https://medlineplus.gov/spanish/kidneyfailure.html
+      </ion-card-content>
+    </ion-card>
+
   </ion-list>
 
   <h2 class="ion-padding">¿GAP Osmolar?</h2>

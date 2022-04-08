@@ -234,3 +234,20 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+ion-img{
+position: sticky;
+left: 500px;
+width: 400px;
+height: 400px;
+border-radius: 50px;
+}
+
+.gaposmolarelevado{
+  font-size: 4em;
+}
+
+.input-wrapper{
+  flex-grow: 3;
+  flex-basis: auto;
+}
