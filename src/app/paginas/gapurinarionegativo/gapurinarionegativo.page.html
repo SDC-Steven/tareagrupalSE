@@ -2,29 +2,54 @@
   <ion-toolbar>
     <ion-title color="primary">GAP Urinario Negativo</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="aniongapnormal" text="Regresar" color="primary"></ion-back-button> 
+      <ion-back-button defaultHref="aniongapnormal" text="Regresar" color="primary"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
   <h2 class="ion-padding">Perdidas Digestivas:</h2>
   <ion-list>
-    <ion-item >
-      Diarrea
+    <ion-item>
+      <ion-chip color="primary" mode="ios" outline="true">
+        <ion-avatar>
+          <ion-img src="/assets/cruzRoja.jpg"></ion-img>
+        </ion-avatar>
+        <ion-label>Diarrea</ion-label>
+      </ion-chip>
     </ion-item>
-    <ion-item >
-      Ileo
+
+    <ion-item>
+      <ion-chip color="primary" mode="ios" outline="true">
+        <ion-avatar>
+          <ion-img src="/assets/cruzRoja.jpg"></ion-img>
+        </ion-avatar>
+        <ion-label>Ileo</ion-label>
+      </ion-chip>
     </ion-item>
-    <ion-item >
-      Adenoma Velloso
+
+    <ion-item>
+      <ion-chip color="primary" mode="ios" outline="true">
+        <ion-avatar>
+          <ion-img src="/assets/cruzRoja.jpg"></ion-img>
+        </ion-avatar>
+        <ion-label>Adenoma Venoso</ion-label>
+      </ion-chip>
     </ion-item>
-    <ion-item >
-      Fistulas Intestinales
+    <ion-item>
+
+      <ion-chip color="primary" mode="ios" outline="true">
+        <ion-avatar>
+          <ion-img src="/assets/cruzRoja.jpg"></ion-img>
+        </ion-avatar>
+        <ion-label>Fistulas intestinales</ion-label>
+      </ion-chip>
     </ion-item>
   </ion-list>
 
   <h2 class="ion-padding">ATR Proximal (Tipo II)</h2>
+
 </ion-content>
 
 <!--*ngFor="let item of data" (click)="onClick(item)"-->

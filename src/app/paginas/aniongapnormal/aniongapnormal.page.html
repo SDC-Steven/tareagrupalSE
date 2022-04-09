@@ -2,20 +2,22 @@
   <ion-toolbar>
     <ion-title color="primary">Anion GAP Normal</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="principal" text="Regresar" color="primary"></ion-back-button> 
+      <ion-back-button defaultHref="principal" text="Regresar" color="primary"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
   <h1>Anion GAP Normal</h1>
-  <h2>¿GAP Urinario?</h2>
+  <h2>¿GAP Urinario positivo?</h2>
 
-  <ion-button expand="block" routerLink="/gapurinarionegativo">
-    Negativo
+  <ion-button expand="block" routerLink="/gapurinariopositivo" color="success">
+    Sí
   </ion-button>
 
-  <ion-button expand="block" routerLink="/gapurinariopositivo">
-    Positivo
+  <ion-button expand="block" routerLink="/gapurinarionegativo" color="danger">
+    No
   </ion-button>
+
+
 </ion-content>
